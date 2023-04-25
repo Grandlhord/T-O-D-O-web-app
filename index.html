@@ -8,26 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>T O D O APP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-image"></div>
+    <div class="background-image">
+        <img src="bg-desktop-light.jpg" alt="background image">
+    </div>
     <div class="container">
         <div class="header">
-            <div class="title"></div>
-            <div class="theme"></div>
-        </div>
-        <div class="add-todo"></div>
-        <div class="todo-list">
-            <div class="todo-container"></div>
-        </div>
-        <div class="info">
-            <p class="left">3 Items left</p>
-            <div class="option">
-                <p class="active">ALL</p>
-                <p>Active</p>
-                <p>Completed</p>
+            <div class="title">TODO</div>
+            <div class="theme">
+                <img src="icon-moon.svg" alt="theme icon">
             </div>
         </div>
+        <div class="add-todo">
+            <form>
+              <input type="text" placeholder="Create a new todo.." id="text">
+            </form>
+            <div class="todo-list">
+              <div class="todo-con">
+              </div>
+            </div>
+            <div class="info">
+              <p class="left">5 items left</p>
+              <div class="option">
+                <p class="active">All</p>
+                <p>Active</p>
+                <p>Completed</p>
+              </div>
+              <p class="clear">Clear Completed</p>
+            </div>
+          </div>
     </div>
 
 </body>
