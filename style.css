@@ -88,13 +88,12 @@ input::placeholder{
     padding: 1rem 0.9rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
 }
 .todo-li p{
     width: 92%;
-    color: #fff;
+    color: black;
 }
 .todo-li .check{
     width: 20px;
