@@ -158,3 +158,25 @@ input::placeholder{
     text-decoration: line-through;
     opacity: 0.5;
 }
+.dark-mode{
+    background: black;
+    
+}
+  .dark-mode  .todo-li   {
+    background-color: #25273D;
+    color :white;
+  }
+
+  .dark-mode  .info  {
+    background-color: #25273D;
+    color :white
+  }
+
+  .dark-mode form input {
+    background: #25273D;
+    color : hsl(233, 11%, 84%)
+  }
+
+  .dark-mode .hr {
+    background: whitesmoke
+  }

@@ -103,3 +103,27 @@ function setitem() {
     
 }
 setitem();
+
+
+
+/* darkmode= document.querySelector('.theme').addEventListener('click',function(){
+    var element = document.body;
+     element.classList.toggle("dark-mode");
+     });*/
+
+
+ const toggleModeBtn = document.getElementById('toggle-svg');
+const contentDivs = document.querySelectorAll('.container');
+const image = document.getElementById('image');
+
+toggleModeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  contentDivs.forEach(div => {
+    div.classList.toggle('dark-mode');
+  });
+  if (image.src.endsWith('bg-desktop-light.jpg')) {
+    image.src = 'bg-desktop-dark.jpg';
+  } else {
+    image.src = 'bg-desktop-light.jpg';
+  }
+});
