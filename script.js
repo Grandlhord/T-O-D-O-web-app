@@ -21,9 +21,9 @@ function addtodo(elem) {
     if(todotext){
     todoColl.innerHTML=`
     <div class="todo-li">
-    <div class="check ${elem && elem.complete?"active-check":""}"><img src="./images/icon-check.svg" alt=""></div>
+    <div class="check ${elem && elem.complete?"active-check":""}"><img src="icon-check.svg" alt=""></div>
     <p class="ptag ${elem && elem.complete?"complete":""}">${todotext}</p>
-    <button class="close"><img src="./images/icon-cross.svg" alt=""></button>
+    <button class="close"><img src="icon-cross.svg" alt=""></button>
   </div>
   <div class="hr"></div>`;
     todoCon.appendChild(todoColl);
