@@ -122,6 +122,7 @@ toggleModeBtn.addEventListener('click', () => {
     div.classList.toggle('dark-mode');
   });
   if (image.src.endsWith('bg-desktop-light.jpg')) {
+    
     image.src = 'bg-desktop-dark.jpg';
   } else {
     image.src = 'bg-desktop-light.jpg';

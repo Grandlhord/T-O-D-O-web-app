@@ -33,6 +33,7 @@ body{
     max-width: 700px;
     margin: 0px 30px;
     margin-top: 150px;
+   
 }
 
 .header {
@@ -160,7 +161,7 @@ input::placeholder{
 }
 .dark-mode{
     background: black;
-    
+
 }
   .dark-mode  .todo-li   {
     background-color: #25273D;
