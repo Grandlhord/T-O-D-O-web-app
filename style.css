@@ -126,7 +126,7 @@ input::placeholder{
 .hr{
     width: 100%;
     background: hsl(233, 14%, 35%);
-    height: 0.5px;
+    height: 1px;
 }
 .info{
     width: 100%;
