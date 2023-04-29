@@ -126,7 +126,7 @@ input::placeholder{
 .hr{
     width: 100%;
     background: hsl(233, 14%, 35%);
-    height: 0.9px;
+    height: 0.5px;
 }
 .info{
     width: 100%;
@@ -174,13 +174,12 @@ input::placeholder{
 
   .dark-mode form input {
     background: #25273D;
-    color : hsl(233, 11%, 84%)
+    color : white;
+    
   }
 
   .dark-mode .hr {
     background: whitesmoke
   }
 
-  .dark-mode body{
-    background-color: black;
-  }
+ 
