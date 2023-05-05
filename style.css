@@ -66,13 +66,13 @@ form input{
     margin-top: 2rem;
     background: hsl(0, 0%, 98%);
     font-size: 16px;
-    color: black;
+    color: hsl(235, 19%, 35%);
     letter-spacing: 3px;
     outline: none;
     border: none;
 }
 input::placeholder{
-    color: black;
+    color: hsl(235, 19%, 35%);
     letter-spacing: 2px;
 }
 .list{
@@ -96,7 +96,7 @@ input::placeholder{
 }
 .todo-li p{
     width: 92%;
-    color: black;
+    color: hsl(235, 19%, 35%);
 }
 .todo-li .check{
     width: 20px;
@@ -125,8 +125,9 @@ input::placeholder{
 }
 .hr{
     width: 100%;
-    background: hsl(233, 14%, 35%);
+    background: hsl(236, 33%, 92%);
     height: 1px;
+    
 }
 .info{
     width: 100%;
@@ -164,22 +165,29 @@ input::placeholder{
 
   .dark-mode  .todo-li   {
     background-color: #25273D;
-    color :white;
+    color :hsl(236, 9%, 61%)
   }
 
+  .dark-mode .todo-li p{
+    color: hsl(236, 9%, 61%);
+  }
   .dark-mode  .info  {
     background-color: #25273D;
-    color :white
+    color :hsl(236, 9%, 61%)
   }
 
   .dark-mode form input {
     background: #25273D;
-    color : white;
+    color : hsl(236, 9%, 61%);
     
   }
 
   .dark-mode .hr {
-    background: whitesmoke
+    background:hsl(234, 39%, 85%);
+    
   }
 
- 
+ .dark-mode input::placeholder {
+    color :hsl(236, 9%, 61%);
+    letter-spacing: 2px;
+ }

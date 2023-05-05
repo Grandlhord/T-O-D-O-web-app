@@ -123,7 +123,7 @@ toggleModeBtn.addEventListener('click', () => {
     div.classList.toggle('dark-mode');
   });
   if (image.src.endsWith('bg-desktop-light.jpg')) {
-    document.body.style.backgroundColor = '#000';
+    document.body.style.backgroundColor = 'hsl(235, 21%, 11%)';
     image.src = 'bg-desktop-dark.jpg';
   } else {
     image.src = 'bg-desktop-light.jpg';
