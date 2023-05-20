@@ -142,6 +142,7 @@ input::placeholder{
 }
 .option{
     display: flex;
+    
 }
 .option p{
     padding:  0 5px;
@@ -191,3 +192,41 @@ input::placeholder{
     color :hsl(236, 9%, 61%);
     letter-spacing: 2px;
  }
+
+ @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px;
+    }
+    
+    .add-todo {
+        max-height: 400px;
+    }
+    
+    form {
+        height: 90px;
+    }
+    
+    form input {
+        padding: 10px 20px;
+        height: 50px
+    }
+    
+    .list {
+        max-height: 250px;
+        
+    }
+    
+    .todo-li {
+        font-size: 18px;
+        margin-top: 9px;
+    }
+   
+}
