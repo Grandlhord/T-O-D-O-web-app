@@ -1,19 +1,23 @@
+/*define variable and assign HTML elements to them*/
 let form = document.querySelector("form");
 let text = document.getElementById("text");
 let todoCon = document.querySelector(".todo-con");
 let left = document.querySelector(".left");
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
+/*event listener for submition of todo to list*/
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   addTodo();
 });
 
+/*updating the localstorage and items left*/
 function updateLs() {
   localStorage.setItem("todos", JSON.stringify(todos));
   updateItemsLeft();
 }
 
+/*adding todo*/
 function addTodo() {
   let todotext = text.value;
   if (todotext) {
@@ -28,6 +32,7 @@ function addTodo() {
   }
 }
 
+/*rendering of todo for one todo item and adding elements such as the cross and check boxes*/
 function renderTodoItem(todo) {
   let todoColl = document.createElement("div");
   todoColl.classList.add("todocoll");
@@ -68,12 +73,14 @@ function renderTodoItem(todo) {
   todoColl.addEventListener("drop", handleDrop);
 }
 
+/*updating items left function*/
 function updateItemsLeft() {
   let activeTodos = todos.filter(todo => !todo.complete);
   let count = activeTodos.length;
   left.innerText = `${count} item${count === 1 ? "" : "s"} left`;
 }
 
+/*filtering of todo*/
 function filterTodos(filter) {
   let todoItems = todoCon.getElementsByClassName("todocoll");
   Array.from(todoItems).forEach(todoItem => {
@@ -107,6 +114,7 @@ clear.addEventListener("click", () => {
   updateItemsLeft();
 });
 
+/*drag and drop function*/
 let draggedItem = null;
 
 function handleDragStart() {
