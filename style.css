@@ -44,6 +44,11 @@ body{
     
 }
 
+.theme {
+    cursor: pointer;
+
+}
+
 .title {
     color: white;
     letter-spacing: 10px;
